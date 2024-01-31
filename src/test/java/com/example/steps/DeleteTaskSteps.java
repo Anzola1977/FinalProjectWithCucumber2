@@ -1,2 +1,4 @@
-package com.example.steps;public class DeleteTaskSteps {
+package com.example.steps;
+
+public class DeleteTaskSteps {
 }

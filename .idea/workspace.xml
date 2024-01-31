@@ -5,19 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf157d44-2ba0-41fa-9652-d0b76b8c345c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/RunCucumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/RunCucumberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/context/Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/context/Context.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/pages/InternalPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/pages/InternalPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/steps/CommonSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/steps/CommonSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/steps/CreateTaskSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/steps/CreateTaskSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/steps/DeleteTaskSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/steps/DeleteTaskSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/steps/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/steps/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/steps/WorkWithTaskSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/steps/WorkWithTaskSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/utils/ConfigurationReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/utils/ConfigurationReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/utils/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/utils/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/com.example/task_delete.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com.example/task_delete.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/com.example/task_field.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com.example/task_field.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/com.example/task_input_field.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com.example/task_input_field.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/configuration.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2bfkiVceMsUGr56TZFhaqaVZPSw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -26,11 +50,134 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Cucumber Java.Feature: task_delete.executor": "Run",
+    "Cucumber Java.Feature: task_input_field.executor": "Run",
+    "Cucumber Java.Scenario: Deleting a task using the trash icon.executor": "Run",
+    "Cucumber Java.Scenario: Input scenarios with Enter key.executor": "Run",
+    "Cucumber Java.Scenario: Input scenarios with empty field.executor": "Run",
+    "Cucumber Java.Scenario: Input scenarios with submit button.executor": "Run",
+    "Cucumber Java.Scenario: Testing the ability to delete all tasks.executor": "Run",
+    "Cucumber Java.Scenario: The task input field is not available for input.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/zolaa/IdeaProjects/FinalProjectWithCucumber2/src/main/resources"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\zolaa\IdeaProjects\FinalProjectWithCucumber2\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Cucumber Java.Feature: task_input_field">
+    <configuration name="Feature: task_delete" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/com.example/task_delete.feature" />
+      <option name="GLUE" value="com.example.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="FinalProjectWithCucumber2" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: task_delete" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: task_input_field" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/com.example/task_input_field.feature" />
+      <option name="GLUE" value="com.example.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="FinalProjectWithCucumber2" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: task_input_field" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Deleting a task using the trash icon" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/com.example/task_delete.feature" />
+      <option name="GLUE" value="com.example.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="FinalProjectWithCucumber2" />
+      <option name="NAME_FILTER" value="^Deleting a task using the trash icon$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Deleting a task using the trash icon$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Deleting a task using the trash icon" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Input scenarios with Enter key" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/com.example/task_input_field.feature" />
+      <option name="GLUE" value="com.example.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="FinalProjectWithCucumber2" />
+      <option name="NAME_FILTER" value="^Input scenarios with Enter key$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Input scenarios with Enter key$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Input scenarios with Enter key" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Testing the ability to delete all tasks" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/com.example/task_delete.feature" />
+      <option name="GLUE" value="com.example.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="FinalProjectWithCucumber2" />
+      <option name="NAME_FILTER" value="^Testing the ability to delete all tasks$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Testing the ability to delete all tasks$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Testing the ability to delete all tasks" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber Java.Feature: task_input_field" />
+        <item itemvalue="Cucumber Java.Feature: task_delete" />
+        <item itemvalue="Cucumber Java.Scenario: Testing the ability to delete all tasks" />
+        <item itemvalue="Cucumber Java.Scenario: Deleting a task using the trash icon" />
+        <item itemvalue="Cucumber Java.Scenario: Input scenarios with Enter key" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

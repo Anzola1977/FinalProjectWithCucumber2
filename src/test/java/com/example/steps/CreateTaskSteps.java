@@ -9,18 +9,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class CreateTaskSteps {
 
-    @When("user enters tasks {string} and date {string}")
-    public void user_enters_tasks(String task, String date) {
-        MainPage mainPage = new MainPage();
-        mainPage.newTaskInput.sendKeys(task);
-        mainPage.dateTaskInput.sendKeys(date);
-    }
-
-    @When("clicks submit button")
-    public void clicks_submit_button() {
-        new MainPage().submitButton.click();
-    }
-
     @When("user clicks in the task input field")
     public void user_clicks_in_the_task_input_field() {
         new MainPage().newTaskInput.click();

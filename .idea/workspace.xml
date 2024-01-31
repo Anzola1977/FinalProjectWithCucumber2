@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf157d44-2ba0-41fa-9652-d0b76b8c345c" name="Changes" comment="Commit with CreateTaskSteps, task_input_field.feature, task_delete.feature">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/steps/StyleChangeSteps.java" afterDir="false" />
+    <list default="true" id="bf157d44-2ba0-41fa-9652-d0b76b8c345c" name="Changes" comment="Commit with WorkWithTaskSteps and StyleChangeSteps">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/pages/InternalPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/pages/InternalPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/steps/CommonSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/steps/CommonSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/steps/CreateTaskSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/steps/CreateTaskSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/steps/DeleteTaskSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/steps/DeleteTaskSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/steps/StyleChangeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/steps/StyleChangeSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/steps/WorkWithTaskSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/steps/WorkWithTaskSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/com.example/style_author.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com.example/style_author.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/com.example/task_field.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com.example/task_field.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +52,7 @@
     "Cucumber Java.Scenario: Testing the ability to mark a task as completed.executor": "Run",
     "Cucumber Java.Scenario: Testing the link of author.executor": "Run",
     "Cucumber Java.Scenario: The task input field is not available for input.executor": "Run",
+    "JUnit.RunCucumberTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
@@ -193,11 +193,20 @@
       <option name="project" value="LOCAL" />
       <updated>1706680049424</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Commit with WorkWithTaskSteps and StyleChangeSteps">
+      <option name="closed" value="true" />
+      <created>1706702866224</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706702866224</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit with CreateTaskSteps, task_input_field.feature, task_delete.feature" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit with CreateTaskSteps, task_input_field.feature, task_delete.feature" />
+    <MESSAGE value="Commit with WorkWithTaskSteps and StyleChangeSteps" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit with WorkWithTaskSteps and StyleChangeSteps" />
   </component>
 </project>

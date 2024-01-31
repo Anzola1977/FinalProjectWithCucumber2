@@ -5,8 +5,6 @@ import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.support.Color;
 
 import java.util.List;
 import java.util.Map;
@@ -16,32 +14,9 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class WorkWithTaskSteps {
 
-    @When("user clicks this task, enters {string} and presses Enter key")
-    public void userClicksThisTaskTimesEntersAndPressesEnterKey(String string) {
-        MainPage mainPage = new MainPage();
-        mainPage.listOfTasks.getFirst().click();
-//        mainPage.taskFieldInput.click();
-//        mainPage.taskFieldInput.sendKeys(string, Keys.ENTER);
-    }
-
     @Then("the task is changed to {string}")
     public void theTaskIsChangedTo(String string) {
-//        assertEquals(string, new MainPage().taskFieldInput.getText());
-    }
-
-    @When("user clicks icon button")
-    public void userClicksIconButton() {
-//        new MainPage().iconCheck.click();
-    }
-
-    @Then("a checkmark appears")
-    public void aCheckmarkAppears() {
-//        assertTrue(new MainPage().iconCheckTaskCompleted.isDisplayed());
-    }
-
-    @And("the text color changes to gray and crossed out")
-    public void theTextColorChangesToGrayAndCrossedOut() {
-//        assertTrue(new MainPage().taskCompleted.isDisplayed());
+        assertEquals(string, new MainPage().nameOfLastTask.getText());
     }
 
     @And("user enters tasks {string} and clicks submit button")
@@ -49,23 +24,6 @@ public class WorkWithTaskSteps {
         MainPage mainPage = new MainPage();
         mainPage.newTaskInput.sendKeys(tasks);
         mainPage.submitButton.click();
-    }
-
-    @And("user clicks icon button in all tasks")
-    public void clicksIconButtonInAllTasks() {
-        for (int i = 0; i < new MainPage().listOfTasks.size(); i++) {
-//            new MainPage().iconCheck.click();
-        }
-    }
-
-    @Then("the text color of previously marked tasks becomes black and is not crossed out")
-    public void theTextColorOfPreviouslyMarkedTasksBecomesBlackAndIsNotCrossedOut() {
-//        assertTrue(new MainPage().taskFieldInput.isDisplayed());
-    }
-
-    @Then("the counter of marked tasks will be equal to the number of tasks")
-    public void theCounterOfMarkedTasksWillBeEqualToTheNumberOfTasks() {
-//        assertEquals(String.valueOf(new MainPage().listOfTasks.size()), new MainPage().counter.getText());
     }
 
     @And("user clicks delete button")
@@ -76,17 +34,6 @@ public class WorkWithTaskSteps {
     @Then("a task is deleted")
     public void aMarkedTaskIsDeleted() {
         assertTrue(new MainPage().listOfTasks.isEmpty());
-    }
-
-    @Then("the task field changes color to {string} and trash icon appears")
-    public void theTaskFieldChangesColor(String color) {
-//        assertTrue(new MainPage().iconTrash.isDisplayed());
-//        assertEquals(Color.fromString(color), Color.fromString(new MainPage().editTask.getCssValue("background-color")));
-    }
-
-    @And("clicks a trash icon in the task field")
-    public void clicksATrashIconInTheTaskField() {
-//
     }
 
     @When("user clicks a trash icon in the task field")
@@ -105,5 +52,56 @@ public class WorkWithTaskSteps {
             mainPage.dateTaskInput.sendKeys(date);
             mainPage.submitButton.click();
         }
+    }
+
+    @When("user clicks change button")
+    public void userClicksChangeButton() {
+        new MainPage().changeButton.click();
+    }
+
+    @When("user clicks complete button")
+    public void userClicksCompleteButton() {
+        new MainPage().completeButtonList.getLast().click();
+    }
+
+    @Then("a status of the task is changed to completed")
+    public void aStatusOfTheTaskIsChangedToCompleted() {
+        assertEquals("Completed", new MainPage().statusOfLastTask.getText());
+    }
+
+    @And("enters following tasks")
+    public void entersFollowingTasks(DataTable dataTable) {
+        MainPage mainPage = new MainPage();
+        List<Map<String, String>> newTaskList = dataTable.asMaps(String.class, String.class);
+        for (Map<String, String> eachTask : newTaskList){
+            String task = eachTask.get("task");
+            mainPage.newTaskInput.sendKeys(task);
+            mainPage.submitButton.click();
+        }
+    }
+
+    @Then("a status of tasks are changed to completed")
+    public void aStatusOfTasksAreChangedToCompleted() {
+        assertEquals(3, new MainPage().completedStatusOfTask.size());
+    }
+
+    @When("user clicks complete button in the first {int} tasks")
+    public void userClicksCompleteButtonInTheFirstThreeTasks(Integer times) {
+        MainPage mainPage = new MainPage();
+        for (int i = 0; i < times; i++) {
+            mainPage.completeButtonList.get(i).click();
+        }
+    }
+
+    @When("user clicks a filter button and select completed")
+    public void userClicksAFilterButtonAndSelect() {
+        MainPage mainPage = new MainPage();
+        mainPage.filter.click();
+        mainPage.filterByCompleted.click();
+    }
+
+    @Then("Only completed tasks will be displayed")
+    public void onlyCompletedTasksWillBeDisplayed() {
+        assertEquals(new MainPage().listOfTasks.size(), new MainPage().completedStatusOfTask.size());
     }
 }

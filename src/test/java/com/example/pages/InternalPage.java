@@ -16,4 +16,7 @@ public class InternalPage extends BasePage{
     @FindBy(xpath = "//*[@class='dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52']//a[text()='bumblebee']")
     public WebElement styleBumblebee;
 
+    @FindBy(xpath = "//*[@data-theme='bumblebee']")
+    public WebElement nameOfTheme;
+
 }

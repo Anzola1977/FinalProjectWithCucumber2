@@ -27,6 +27,9 @@ public class MainPage extends BasePage {
     @FindBy(xpath = "//*[@class='todo-item'][last()]/td[3]")
     public WebElement statusOfLastTask;
 
+    @FindBy(xpath = "//tr[@class='todo-item']/td[text()='Completed']")
+    public List<WebElement> completedStatusOfTask;
+
     @FindBy(xpath = "//*[@class='todo-item'][last()]/td[1]")
     public WebElement nameOfLastTask;
 
@@ -37,7 +40,7 @@ public class MainPage extends BasePage {
     public WebElement changeButton;
 
     @FindBy(xpath = "//*[@class='btn btn-success btn-sm']")
-    public WebElement completeButton;
+    public List<WebElement> completeButtonList;
 
     @FindBy(xpath = "//*[@class='btn btn-error btn-sm']")
     public WebElement trashButton;
